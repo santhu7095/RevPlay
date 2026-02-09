@@ -50,3 +50,23 @@ Santhosh Akkem
 
 
 
+
+
+\## Database Design (ER Diagram)
+
+
+
+This ER diagram represents the database structure of the RevPlay application
+
+and shows relationships between users, artists, albums, songs, playlists,
+
+and listening history.
+
+
+
+!\[ER Diagram](docs/ERD\_RevPlay.png)
+
+
+
+
+
