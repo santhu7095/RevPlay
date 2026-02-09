@@ -1,0 +1,37 @@
+package com.revplay.service;
+
+import java.sql.Date;
+
+import com.revplay.dao.SongDAO;
+
+public class MusicService {
+
+    private SongDAO songDAO = new SongDAO();
+
+    // UPLOAD SONG (CORRECT PARAMETER PASSING)
+    public void uploadSong(int artistId,
+                           Integer albumId,
+                           String title,
+                           String genre,
+                           int duration,
+                           Date releaseDate,
+                           String filepath)
+    {
+
+        boolean success = songDAO.uploadSong(
+                artistId,
+                albumId,
+                title,
+                genre,
+                duration,
+                releaseDate,
+                filepath
+        );
+
+        if (success) {
+            System.out.println("âœ… Song uploaded successfully!");
+        } else {
+            System.out.println("â�Œ Song upload failed!");
+        }
+    }
+}
